@@ -8,42 +8,53 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <p>
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up
-        <i>now</i>
-        to get started.
-      </p>
-      <p>
-        You
-        <i>know</i>
-        you want to.
-      </p>
-    </header>
-    <div>
+    <div class="left-div">
+      <img
+      id="left-div-image"
+        src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?.jpg"
+        alt=""
+      />
+    </div>
+    <div class="right-div">
+      <div>
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <i>now</i>
+          to get started.
+        </p>
+        <p>
+          You
+          <i>know</i>
+          you want to.
+        </p>
+      </div>
       <form action="">
         <h2>Let's do this!</h2>
-        <label for="firstName">FIRST NAME</label>
-        <input type="text" id="firstName" />
-        <label for=":userEmail">EMAIL</label>
-        <input type="email" name="EMAIL" id="userEmail" />
-        <label for="lastName">LAST NAME</label>
-        <input type="text" id="lastName" />
-        <label for="phoneNumber">PHONE NUMBER</label>
-        <input type="tel" id="phoneNumber" />
-        <label for="userPassword">PASSWORD</label>
-        <input type="password" id="userPassword" / required>
-        <label for="confirmPassword">CONFIRM PASSWORD</label>
-        <input type="password" id="confirmPassword" />
+        <div>
+          <label for="firstName">FIRST NAME</label>
+          <input type="text" id="firstName" />
+          <label for=":userEmail">EMAIL</label>
+          <input type="email" name="EMAIL" id="userEmail" />
+          <label for="userPassword">PASSWORD</label>
+          <input type="password" id="userPassword" / required>
+        </div>
+        <div>
+          <label for="lastName">LAST NAME</label>
+          <input type="text" id="lastName" />
+          <label for="phoneNumber">PHONE NUMBER</label>
+          <input type="tel" id="phoneNumber" />
+          <label for="confirmPassword">CONFIRM PASSWORD</label>
+          <input type="password" id="confirmPassword" />
+        </div>
       </form>
+      <div>
+        <button type="submit">Create Account</button>
+        <p>
+          Already have an account?
+          <a href="">Log in</a>
+        </p>
+      </div>
     </div>
-    <footer>
-      <button type="submit">Create Account</button>
-      <p>
-        Already have an account?
-        <a href="">Log in</a>
-      </p>
-    </footer>
   </body>
 </html>
