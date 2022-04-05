@@ -1,24 +1,32 @@
-html{
-    width: auto;
-    height: 100%;
+html {
+  width: auto;
+  height: 100%;
 }
-body{
-    height: 100%;
-    width: auto;
+body {
+  height: 100%;
+  width: auto;
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
 }
 
 .left-div {
   float: left;
-  width: 40%;
-  height: 100%;
   background-color: blueviolet;
 }
-#left-div-image{
-    max-width: 100%;
-    max-height: auto;
+#left-div-image {
+  max-width: 100%;
+  max-height: 100%;
 }
 .right-div {
-  float: right;
-  width: 60%;
-  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 0.33fr);
+}
+.form-container{
+  background-color: antiquewhite;
+}
+.sign-up-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+  row-gap: 10%;
 }
