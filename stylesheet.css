@@ -5,7 +5,7 @@
 html {
   height: 100vh;
   width: auto;
-  font-size: calc(1em + 1vw);
+  font-size: 2vw;
 }
 body {
   padding: 0;
@@ -17,9 +17,8 @@ body {
 .left-div {
   background-color: aqua;
   display: grid;
+  height: 100vh;
   grid-template-columns: 100%;
-  height: 100%;
-  width: 100%;
   background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,8 +48,10 @@ body {
   color: aliceblue;
 }
 .right-div {
+  height: 100vh;
   background-color: burlywood;
   display: grid;
+  grid-template-columns: 100%;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     "disclaimer-container"
@@ -66,13 +67,17 @@ body {
   font-size: calc((1vw + 2rem) / 3);
   font-weight: bold;
 }
+.right-div-footer {
+  background-color: coral;
+  grid-area: right-div-footer;
+}
+
 .form-container {
   background-color: chocolate;
   grid-area: form-container;
   position: relative;
   box-shadow: 0px 10px rgba(0, 0, 0, 0.5);
 }
-.right-div-footer {
-  background-color: coral;
-  grid-area: right-div-footer;
+.sign-up-form{
+  display: grid;
 }
