@@ -60,10 +60,13 @@ body {
 .disclaimer-container {
   background-color: chartreuse;
   grid-area: disclaimer-container;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .disclaimer-container p {
   font-family: "Times New Roman", Times, serif;
-  font-size: calc((1vw + 2rem) / 3);
+  font-size: calc((1vw + 2rem) / 4);
   font-weight: bold;
 }
 .right-div-footer {
