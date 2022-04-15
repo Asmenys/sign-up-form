@@ -50,7 +50,7 @@ body {
 .right-div {
   height: 100vh;
   display: grid;
-  grid-template-rows: 0.3fr 0.3fr auto;
+  grid-template-rows: 0.3fr 0.3fr 0.4fr;
   grid-template-areas:
     "disclaimer-container"
     "form-container"
@@ -69,10 +69,27 @@ body {
 }
 .right-div-footer {
   grid-area: right-div-footer;
+  padding-top: 5%;
+  padding-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20% 80%;
+}
+.right-div-footer p {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.right-div-footer button {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .form-container {
-  background-color: rgba(215, 215, 215, 0.1);
+  background-color: rgba(215, 215, 215, 0.2);
   padding-left: 5%;
   grid-area: form-container;
   position: relative;
@@ -98,7 +115,6 @@ body {
   display: grid;
   justify-self: stretch;
   align-self: stretch;  
-  
 }
 .label {
   font-size: calc((1rem + 2vw) / 4);
