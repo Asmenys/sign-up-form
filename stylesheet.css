@@ -137,6 +137,16 @@ a {
   column-gap: 5%;
   padding-bottom: 5%;
 }
+.sign-up-form input {
+  border-width: 0.02rem;
+  border-radius: 0.10rem;
+  border-color: rgb(233,255,255);
+}
+.sign-up-form input:focus{
+  border-color: rgb(44, 126, 153);
+  box-shadow: 0.2rem 0.2rem rgba(158, 158, 158, 0.2);
+  
+}
 .input-container {
   display: grid;
   justify-self: stretch;
