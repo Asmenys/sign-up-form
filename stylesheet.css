@@ -9,6 +9,7 @@ html {
   --dark-moss-green: rgb(91, 114, 66);
   --rifle-green: #434323ff;
   --forest-green-traditional: rgb(71, 112, 45);
+  --error-color: rgb(233, 34, 34);
 }
 
 body {
@@ -80,37 +81,21 @@ a {
   font-weight: bold;
 }
 .right-div-footer {
+  padding-top: 5%;
+  padding-left: 4%;
   grid-area: right-div-footer;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 0.3fr auto
 }
 .right-div-footer p {
-  font-size: 0.8rem;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 .right-div-footer button {
   background-color: var(--dark-moss-green);
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  display: grid;
-  align-self: end;
-  justify-self: center;
-  align-content: center;
   color: rgb(255,255,255);
   cursor: pointer;
   border: 0;
+  height: 5vh;
+  width: 25%;
   border-radius: 0.2rem;
-  height: 40%;
-  width: 70%;
   font-size: 0.8rem;
 }
 
@@ -138,19 +123,29 @@ a {
   padding-bottom: 5%;
 }
 .sign-up-form input {
+  height: 1rem;
   border-width: 0.02rem;
   border-radius: 0.10rem;
   border-color: rgb(233,255,255);
 }
+.sign-up-form .input-error {
+  border-color: var(--error-color);
+}
+
 .sign-up-form input:focus{
   border-color: rgb(44, 126, 153);
   box-shadow: 0.2rem 0.2rem rgba(158, 158, 158, 0.2);
   
 }
+.sign-up-form .error-message{
+  font-size: 0.6rem;
+  color: var(--error-color);
+  margin-top: 0;
+}
 .input-container {
   display: grid;
   justify-self: stretch;
-  align-self: stretch;  
+  align-self: start;  
 }
 .label {
   font-size: calc((1rem + 2vw) / 4);
